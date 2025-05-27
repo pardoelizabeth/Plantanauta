@@ -5,7 +5,7 @@ import { resolve } from 'node:path';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-    base: './',  // <-- agregar esta línea para usar rutas relativas
+    base: '',  // también válido para rutas relativas
     plugins: [
         laravel({
             input: ['resources/css/app.css', 'resources/js/app.tsx'],
