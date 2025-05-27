@@ -141,12 +141,12 @@ export default function MisPlantasIndex({ plantas = [] }: Props) {
   useEffect(() => {
     const fetchWeather = async () => {
       try {
-        // const lat = 22.1511; // San Luis Potosí
-        // const lon = -100.9761;
-        // const apiKey = '235ba4a9a9e27753b8e747cf5dbf940b'; // 🔑 Tu clave real
-        // const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&lang=es&appid=${apiKey}`;
-        // const response = await axios.get(url);
-        // setClima(response.data);
+        const lat = 22.1511; // San Luis Potosí
+        const lon = -100.9761;
+        const apiKey = '235ba4a9a9e27753b8e747cf5dbf940b'; // 🔑 Tu clave real
+        const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&lang=es&appid=${apiKey}`;
+        const response = await axios.get(url);
+        setClima(response.data);
       } catch (error) {
         console.error('Error al obtener el clima:', error);
       }
