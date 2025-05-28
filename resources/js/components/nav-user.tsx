@@ -17,11 +17,19 @@ export function NavUser() {
             <SidebarMenuItem>
                 <DropdownMenu>
                     <DropdownMenuTrigger asChild>
+                        <button
+                            className="flex items-center w-58 px-4 py-2 bg-white-200 rounded hover:bg-gray-100 transition-colors"
+                        >
+                            <UserInfo user={auth.user} />
+                            <ChevronsUpDown className="ml-auto w-4 h-4" />
+                        </button>
+                    </DropdownMenuTrigger>
+                    {/* <DropdownMenuTrigger asChild>
                         <SidebarMenuButton size="lg" className="text-sidebar-accent-foreground data-[state=open]:bg-sidebar-accent group">
                             <UserInfo user={auth.user} />
                             <ChevronsUpDown className="ml-auto size-4" />
                         </SidebarMenuButton>
-                    </DropdownMenuTrigger>
+                    </DropdownMenuTrigger> */}
                     <DropdownMenuContent
                         className="w-(--radix-dropdown-menu-trigger-width) min-w-56 rounded-lg"
                         align="end"
