@@ -18,8 +18,8 @@ export default function Dashboard() {
             <div className="flex items-center justify-center min-h-[calc(100vh-4rem)] px-4">
                 <div className="text-center">
                     <img
-                    src="public/PlantanautasinLetras.png"
-                    alt="Plantanauta logo"
+                    src="https://i.imgur.com/JxtXSzz.png"
+                    alt="Logo Plantanauta"
                     className="mx-auto h-50 mb-6" // mx-auto lo centra horizontalmente, mb-6 para separar del título
                     />
                     <h1 className="text-3xl font-bold text-green-800 mb-4">
