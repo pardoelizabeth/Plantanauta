@@ -103,7 +103,7 @@ export default function TareasDeCuidadoEdit({ tarea }: Props) {
               />
             </div>
 
-            <Button type="submit" disabled={processing}>
+            <Button type="submit" className="bg-[#8ac03f] hover:bg-[#7eb138] text-white" disabled={processing}>
               Guardar cambios
             </Button>
           </form>
