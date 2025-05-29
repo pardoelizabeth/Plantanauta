@@ -103,7 +103,7 @@ export default function AgregarTareaCuidado() {
               />
             </div>
 
-            <Button type="submit">
+            <Button type="submit" className="bg-[#8ac03f] hover:bg-[#7eb138] text-white">
               Guardar tarea de cuidado
             </Button>
           </form>
