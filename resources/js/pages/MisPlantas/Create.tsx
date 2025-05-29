@@ -108,7 +108,7 @@ export default function MisPlantasCreate({ plantas }: Props) {
           <button
             type="submit"
             disabled={processing}
-            className="px-4 py-2 bg-green-600 text-white rounded-xl hover:bg-green-700"
+            className="px-4 py-2 bg-[#8ac03f] text-white rounded-xl hover:bg-[#7eb138]"
           >
             Guardar planta
           </button>
