@@ -187,7 +187,7 @@ export default function AgregarPlanta() {
               />
             </div>
 
-            <Button type="submit">
+            <Button type="submit" className="bg-[#8ac03f] hover:bg-[#7eb138] text-white">
               Guardar planta
             </Button>
           </form>
