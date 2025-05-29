@@ -94,7 +94,7 @@ export default function PlantaEdit({ planta }: Props) {
           </div>
 
           <div className="pt-4 flex justify-end">
-            <Button type="submit" disabled={processing}>
+            <Button type="submit" className="bg-[#8ac03f] hover:bg-[#7eb138] text-white" disabled={processing}>
               Guardar cambios
             </Button>
           </div>
