@@ -122,7 +122,7 @@ export default function MisPlantasIndex({ plantas = [] }: Props) {
 
     return (
       <div className="text-center mt-4">
-        <h3 className="text-base font-semibold mb-2 text-green-700">
+        <h3 className="text-base font-semibold mb-2">
           Días de riego recomendados
         </h3>
         <div className="flex justify-center">
@@ -188,7 +188,7 @@ export default function MisPlantasIndex({ plantas = [] }: Props) {
           <h1 className="text-xl font-bold">Mis Plantas</h1>
           <button
             onClick={() => router.get('/mis-plantas/crear')}
-            className="px-4 py-2 bg-green-600 text-white rounded-xl hover:bg-green-700"
+            className="px-4 py-2 bg-[#8ac03f] text-white rounded-xl hover:bg-[#7eb138]"
           >
             + Agregar planta
           </button>
@@ -204,7 +204,7 @@ export default function MisPlantasIndex({ plantas = [] }: Props) {
                 key={planta.id}
                 className="p-4 border rounded-xl space-y-4"
               >
-                <div className="flex items-center space-x-4">
+                <div className="flex flex-col items-center text-center gap-4">
                   <img
                     src={
                       planta.imagen
@@ -230,7 +230,7 @@ export default function MisPlantasIndex({ plantas = [] }: Props) {
                 <div className="flex flex-col items-end gap-2">
                   <button
                     onClick={() => abrirModal(planta.id)}
-                    className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 text-sm w-[250px] justify-center"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-[#8ac03f] text-white rounded hover:bg-[#7eb138] text-sm w-[250px] justify-center"
                   >
                     <Bell size={16} />
                     Activar recordatorios
@@ -260,7 +260,7 @@ export default function MisPlantasIndex({ plantas = [] }: Props) {
                       onClick={() =>
                         router.get(`/mis-plantas/${planta.id}/editar`)
                       }
-                      className="flex-1 px-4 py-2 bg-green-600 text-white text-sm rounded hover:bg-green-700"
+                      className="flex-1 px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700"
                     >
                       Editar
                     </button>
