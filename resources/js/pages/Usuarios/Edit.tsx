@@ -77,7 +77,7 @@ export default function EditUsuario({ usuario }: Props) {
             <button
               type="submit"
               disabled={processing}
-              className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:opacity-50"
+              className="px-4 py-2 bg-[#8ac03f] text-white rounded-lg hover:bg-[#7eb138] disabled:opacity-50"
             >
               Guardar cambios
             </button>
