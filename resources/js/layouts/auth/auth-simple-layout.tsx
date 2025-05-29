@@ -19,7 +19,7 @@ export default function AuthSimpleLayout({ children, title, description }: Props
                                 <img
                                 src="https://i.imgur.com/JxtXSzz.png"
                                 alt="Logo Plantanauta"
-                                className="h-15 mx-auto mb-6"
+                                className="h-12 mx-auto mb-6"
                                 />
                             </div>
                             <span className="sr-only">{title}</span>
