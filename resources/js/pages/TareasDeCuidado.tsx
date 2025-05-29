@@ -40,11 +40,11 @@ export default function TareasCuidado({ tareas }: Props) {
       <Head title="Tareas de Cuidado" />
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-6">
         {tareas.map((tarea) => (
-          <div key={tarea.id} className="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col justify-between">
+          <div key={tarea.id} className="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col">
             {tarea.imagen && (
               <img src={tarea.imagen} alt={tarea.nombre} className="h-48 w-full object-cover" />
             )}
-            <div className="p-4 space-y-2 flex-1">
+            <div className="p-4 space-y-2 flex flex-col flex-1">
               <h2 className="text-lg font-semibold">{tarea.nombre}</h2>
               <p className="text-gray-700 text-base font-medium flex items-start gap-2">
                 <Info className="w-6 h-6 shrink-0 mt-[2px]" style={{ color: '#809671' }} />
@@ -68,7 +68,7 @@ export default function TareasCuidado({ tareas }: Props) {
                   <strong>Instrucciones:</strong> {tarea.instrucciones}
                 </p>
               )}
-              <div className="flex justify-end gap-2 pt-4">
+              <div className="flex justify-end gap-2 pt-4 mt-auto">
                 <button
                   className="flex items-center gap-1 text-sm text-blue-600 hover:text-blue-800 font-medium"
                   onClick={() => router.get(`/tareascuidado/${tarea.id}/editar`)}
@@ -94,8 +94,7 @@ export default function TareasCuidado({ tareas }: Props) {
 
       {/* Modal de confirmación */}
       {mostrarModal && (
-<div className="fixed inset-0 backdrop-blur-sm bg-white/10 flex items-center justify-center z-50">
-
+        <div className="fixed inset-0 backdrop-blur-sm bg-white/10 flex items-center justify-center z-50">
           <div className="bg-white p-6 rounded-2xl shadow-lg max-w-sm w-full">
             <h2 className="text-lg font-semibold mb-4">¿Eliminar tarea?</h2>
             <p className="text-gray-700 mb-6">¿Estás seguro(a) de que deseas eliminar esta tarea de cuidado?</p>
